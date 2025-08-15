@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+/* Déclaration de mes couleurs */
+:root{
+    /* couelur principale */
+    /* couelur de texte */
+    --couleur-text:#212121;
+    /* couleur de fond */
+    --couleur-de-fond: #00bcd4;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;    
+}

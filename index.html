@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Mime Accueil | Mon premier si en ligne </title>
+
+    <!-- CDN de tailwind v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- la police google font -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+
+    <!-- le css en local -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-    <h1>Voici mon premier site en ligne</h1>
+<body class="relative">
+    <header class="header fixed w-full top-0 left-0 px-5 lg:px-10 py-6 mix-blend-difference text-white isolate">
+        <div class="flex justify-between items-center">
+            <!-- Le menu du pc -->
+                <div id="nom_de_agence" class="text-white mix-blend-difference text-xl lg:text-[2em] font-bold ">LeMime Agency</div>
+
+                <nav id="naviguation_pc" class="hidden lg:flex gap-2 items-center w-[60%] text-[#212121]">
+                    <div id="btn_acceuil_pc" class="grow cursor-pointer">Acceuil</div>
+                    <div id="btn_service_pc" class="grow cursor-pointer">Services</div>
+                    <div id="btn_realisations_pc" class="grow cursor-pointer">Réalisations</div>
+                    <div id="btn_contact_pc" class="grow cursor-pointer">Contact</div>
+                    <div id="btn_apropos_pc" class="grow cursor-pointer">A propos</div>
+                </nav>
+            <!-- Le menu du pc -->
+
+
+
+            <!-- Le menu de la tablette et mobile inferieur -->
+                <div id="menu_hamberger" class="space-y-0.5 lg:hidden cursor-pointer">
+                    <div class="w-10 p-1 bg-white rounded"></div>
+                    <div class="w-10 p-1 bg-white rounded"></div>
+                    <div class="w-10 p-1 bg-white rounded"></div>
+                </div>
+
+            <!-- Le menu de la tablette et mobile inferieur -->
+        </div>
+    </header>
+    <!-- Le menu de la tablette et mobile inferieur -->
+        <div id="menu_contact" class="w-screen h-screen fixed top-0 left-0 flex flex-col-reverse md:flex-row lg:hidden z-50 text-white">
+            <div class="fixed p-2 md:p-6 top-0 left-0 w-full z-30">
+                <div class="flex justify-between items-center h-8 md:h-10">
+                    <div id="nom_de_agence" class="text-white text-[1.8rem] md:text-[2.5rem] font-bold">LeMime Agency</div>
+                    <img src="assets/images/svg/x.svg" alt="ferme le menu" class="h-full cursor-pointer">
+                </div>
+            </div>
+            <div class="flex-[2] bg-[url(assets/images/images_carousel/6.webp)] bg-cover bg-center relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-80">
+                <div class="absolute top-0 left-0 w-full h-full z-20 p-6">
+                    
+                    <div class="border flex flex-col gap-6 h-full justify-evenly md:pt-20">
+                        <h1 class="text-[2.8rem] md:text-[4.5rem] font-bold">Construisez votre succès numérique avec nous</h1>
+    
+                        <!-- informations de contact -->
+                            <div id="information_de_contact" class="space-y-4 md:space-y-8 font-bold text-base md:text-xl">
+                                <div id="numero_telephone">+242 06 123 4567</div>
+                                <a id="email" href="mailto:nathanbgaena@gmail.com" class="inline-block">nathanbgaena@gmail.com</a>
+                                <div id="adresse">Ngoyo-Fobert, Pointe-Noire, République du Congo</div>
+                            </div>
+                        <!-- informations de contact -->
+    
+                        <!-- les liens réseaux -->
+                            <div id="contener_social_link" class="flex items-center space-x-8 text-[#00bcd4] text-sm md:text-base">
+                                <a href="https://www.linkedin.com/in/nathangaena/" target="_blank" rel="noopener" id="linkedin">Linkedin</a>
+                                <!-- trait -->
+                                    <div class="h-4 w-[2px] bg-white"></div>
+                                <!-- trait -->
+                                <a href="#" target="_blank" rel="noopener" id="facebook">Facebook</a>
+                                <!-- trait -->
+                                    <div class="h-4 w-[2px] bg-white"></div>
+                                <!-- trait -->
+                                <a href="#" target="_blank" rel="noopener" id="instagram">Instagram</a>
+                            </div>
+                        <!-- les liens réseaux -->
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 bg-[#00bcd4] p-6 w-full h-full">
+                <!-- la navigaution -->
+                    <div class="flex justify-center items-center w-full h-full pt-10 md:p-0">
+                        <nav id="naviguation_mobile" class="w-full gap-2 items-center space-y-4 md:space-y-8 text-xl md:text-4xl font-bold text-[#212121] lg:hidden">
+                            <div id="btn_acceuil_mobile" class="grow cursor-pointer">Acceuil</div>
+                            <div id="btn_service_mobile" class="grow cursor-pointer">Services</div>
+                            <div id="btn_realisations_mobile" class="grow cursor-pointer">Réalisations</div>
+                            <div id="btn_contact_mobile" class="grow cursor-pointer">Contact</div>
+                            <div id="btn_apropos_mobile" class="grow cursor-pointer">A propos</div>
+                        </nav>
+                    </div>
+                <!-- la navigaution -->
+            </div>
+        </div>
+    <!-- Le menu de la tablette et mobile inferieur -->
+
+    <main>
+        <section class="hero border border-red-500 h-screen bg-white z-10">
+            <!-- <video src="assets/Videos/24216-340670744.mp4"></video> -->
+             je ne suis pas dan sle header
+        </section>
+    </main>
 </body>
 </html>

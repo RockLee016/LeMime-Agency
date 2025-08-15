@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaCom Hero - Mix Blend Mode</title>
+<style>
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background: url('https://assets.codepen.io/319606/tactus-waves-hero-sm.mp4') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 8vw;
+  font-weight: bold;
+  color: white;
+  mix-blend-mode: difference; /* change visuellement selon le fond */
+  text-align: center;
+}
+#div1{
+    height: 80vh;
+    background-color: yellow;
+}
+#div2{
+    height: 20vh;
+    background-color: violet;
+}
+#div3{
+    height: 70vh;
+    background-color: brown;
+}
+#div4{
+    height: 20vh;
+    background-color: greenyellow;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-text">NovaCom</div>
+</div>
+
+<div id="div1">je suis la div 1</div>
+<div id="div2">je suis la div 2</div>
+<div id="div3">je suis la div 3</div>
+<div id="div4">je suis la div 4</div>
+
+</body>
+</html>
