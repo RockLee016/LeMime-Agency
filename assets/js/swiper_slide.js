@@ -1,11 +1,26 @@
 const swiper = new Swiper (".swiper", {
     loop:true,
     speed: 1200,
-    parallax: true,           // si tu utilises l’effet parallax
-    grabCursor: true,         // plus naturel sur mobile
-    resistanceRatio: 0.85,    // résistance douce quand on "tire" trop loin
-    touchReleaseOnEdges: true, // évite les blocages aux extrémités
     autoplay: { delay: 5000 },
+    
+    // Configuration de la pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    
+    // Configuration des boutons de navigation
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    // Configuration de la scrollbar (optionnel)
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    },
+    
     on:{
         // Initialisation - déclencher les animations du premier slide
         init: function () {
