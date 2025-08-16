@@ -6,54 +6,64 @@
     <title>Le Mime Accueil | Mon premier si en ligne </title>
 
     <!-- CDN de tailwind v4 -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CDN de tailwind v4 -->
 
     <!-- la police google font -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+    <!-- la police google font -->
+
+    <!-- La bibliothequz swiper pour les carrousels -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- La bibliothequz swiper pour les carrousels -->
+
+    <!-- la bibliotheque animate css pour les animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- la bibliotheque animate css pour les animation -->
 
     <!-- le css en local -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body class="relative">
-    <header class="header fixed w-full top-0 left-0 px-5 lg:px-10 py-6 mix-blend-difference text-white isolate">
+<body class="relative text-white texx-xs md:text-base">
+    <header class="header fixed w-full top-0 left-0 px-5 lg:px-10 py-6 mix-blend-difference text-white isolate z-[9990]">
         <div class="flex justify-between items-center">
             <!-- Le menu du pc -->
-                <div id="nom_de_agence" class="text-white mix-blend-difference text-xl lg:text-[2em] font-bold ">LeMime Agency</div>
+                <div id="nom_de_agence" class="text-white mix-blend-difference text-2xl md:text-[2.5em] font-bold ">LeMime Agency</div>
 
-                <nav id="naviguation_pc" class="hidden lg:flex gap-2 items-center w-[60%] text-[#212121]">
-                    <div id="btn_acceuil_pc" class="grow cursor-pointer">Acceuil</div>
-                    <div id="btn_service_pc" class="grow cursor-pointer">Services</div>
-                    <div id="btn_realisations_pc" class="grow cursor-pointer">Réalisations</div>
-                    <div id="btn_contact_pc" class="grow cursor-pointer">Contact</div>
-                    <div id="btn_apropos_pc" class="grow cursor-pointer">A propos</div>
+                <nav id="naviguation_pc" class="hidden lg:flex gap-2 items-center w-[60%] text-white">
+                    <div id="btn_acceuil_pc" class="grow cursor-pointer text-center">Acceuil</div>
+                    <div id="btn_service_pc" class="grow cursor-pointer text-center">Services</div>
+                    <div id="btn_realisations_pc" class="grow cursor-pointer text-center">Réalisations</div>
+                    <div id="btn_contact_pc" class="grow cursor-pointer text-center">Contact</div>
+                    <div id="btn_apropos_pc" class="grow cursor-pointer text-center">A propos</div>
                 </nav>
             <!-- Le menu du pc -->
 
 
 
             <!-- Le menu de la tablette et mobile inferieur -->
-                <div id="menu_hamberger" class="space-y-0.5 lg:hidden cursor-pointer">
-                    <div class="w-10 p-1 bg-white rounded"></div>
-                    <div class="w-10 p-1 bg-white rounded"></div>
-                    <div class="w-10 p-1 bg-white rounded"></div>
+                <div id="menu_amberger" class="space-y-0.5 lg:hidden cursor-pointer">
+                    <div class="w-10 p-1 bg-white rounded duration-500"></div>
+                    <div class="w-10 p-1 bg-white rounded duration-500"></div>
+                    <div class="w-10 p-1 bg-white rounded duration-500"></div>
                 </div>
 
             <!-- Le menu de la tablette et mobile inferieur -->
         </div>
     </header>
     <!-- Le menu de la tablette et mobile inferieur -->
-        <div id="menu_contact" class="w-screen h-screen fixed top-0 left-0 flex flex-col-reverse md:flex-row lg:hidden z-50 text-white">
+        <div id="menu_contact" class="hidden w-screen h-screen fixed top-0 left-0 flex flex-col-reverse md:flex-row lg:hidden z-[9999] text-white -translate-y-4/3 transition duration-1000 ease-in-out">
             <div class="fixed p-2 md:p-6 top-0 left-0 w-full z-30">
                 <div class="flex justify-between items-center h-8 md:h-10">
-                    <div id="nom_de_agence" class="text-white text-[1.8rem] md:text-[2.5rem] font-bold">LeMime Agency</div>
-                    <img src="assets/images/svg/x.svg" alt="ferme le menu" class="h-full cursor-pointer">
+                    <div id="nom_de_agence" class="text-white text-2xl md:text-[2.5em] font-bold">LeMime Agency</div>
+                    <img src="assets/images/svg/x.svg" alt="ferme le menu" id="close_menu" class="h-full cursor-pointer">
                 </div>
             </div>
-            <div class="flex-[2] bg-[url(assets/images/images_carousel/6.webp)] bg-cover bg-center relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-80">
+            <div class="flex-[2] bg-[url(assets/images/image_menu_mobile/6.webp)] bg-cover bg-center relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-80">
                 <div class="absolute top-0 left-0 w-full h-full z-20 p-6">
                     
-                    <div class="border flex flex-col gap-6 h-full justify-evenly md:pt-20">
-                        <h1 class="text-[2.8rem] md:text-[4.5rem] font-bold">Construisez votre succès numérique avec nous</h1>
+                    <div class="flex flex-col gap-6 h-full justify-evenly md:pt-20">
+                        <h1 class="text-[2.8rem] md:text-[4.5rem] font-bold leading-20">Construisez votre succès numérique avec nous</h1>
     
                         <!-- informations de contact -->
                             <div id="information_de_contact" class="space-y-4 md:space-y-8 font-bold text-base md:text-xl">
@@ -96,10 +106,84 @@
     <!-- Le menu de la tablette et mobile inferieur -->
 
     <main>
-        <section class="hero border border-red-500 h-screen bg-white z-10">
-            <!-- <video src="assets/Videos/24216-340670744.mp4"></video> -->
-             je ne suis pas dan sle header
+        <!-- la structure exigée par swiper -->
+        <!-- le slider main container -->
+        <section class="swiper hero h-screen w-sreen overflow-hidden">
+            <!-- la dive requise -->
+            <div class="swiper-wrapper w-full h-full">
+                <!-- slides -->
+                <!-- slide 1 publicité -->
+                    <div class="swiper-slide w-full h-full relative">
+                        <img src="assets/images/images_carousel/Publicité.webp" alt="image carrousel" class="w-full h-full object-cover">
+                        <div id="carre_noir" class="slide-overlay absolute top-0 left-0 w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
+                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-[70%] h-full">
+                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
+                                <div id="headline" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Boostez la visibilité de votre marque</div>
+
+                                <div id="description" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                    Atteignez votre audience avec des campagnes publicitaires percutantes et adaptées à vos besoins.
+                                </div>
+
+                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                    <button type="button" class="btn">Découvrir nos pubs</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- slide 1 publicité -->
+
+
+                <!-- slide 2 Marketing Digital -->
+                    <div class="swiper-slide w-full h-full relative">
+                        <img src="assets/images/images_carousel/Digital_Marketing.webp" alt="image carrousel" class="w-full h-full object-cover">
+                        <div id="carre_noir_marketing_digital" class="slide-overlay absolute top-0 left-0 w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
+                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-[70%] h-full">
+                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
+                                <div id="headline_marketing_digital" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Générez de l’engagement et de la croissance</div>
+
+                                <div id="description_marketing_digital" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                    Exploitez des stratégies basées sur les données pour développer votre activité en ligne et toucher votre audience.
+                                </div>
+
+                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                    <button type="button" class="btn" id="btn_marketing_digital">Voir nos stratégies</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- slide 2 Marketing Digital -->
+
+
+                <!-- slide 3 Branding & Identité Visuelle -->
+                    <div class="swiper-slide w-full h-full relative hidden">
+                        <img src="assets/images/images_carousel/Branding_Identité_visuelle.webp" alt="image carrousel" class="w-full h-full object-cover">
+                        <div id="carre_noir_Branding" class="slide-overlay absolute top-0 left-0 w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
+                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-[70%] h-full">
+                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
+                                <div id="headline_Branding" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Créez une identité mémorable</div>
+
+                                <div id="description_Branding" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                    Concevez une image de marque unique qui capte l’attention et inspire confiance auprès de vos clients.
+                                </div>
+
+                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                    <button type="button" class="btn" id="btn_Branding">Voir nos stratégies</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- slide 3 Branding & Identité Visuelle -->
+            </div>
         </section>
+        <!-- la structure exigée par swiper -->
     </main>
+
+
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper_slide.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>

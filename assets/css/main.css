@@ -5,11 +5,30 @@
     /* couelur principale */
     /* couelur de texte */
     --couleur-text:#212121;
+    --couleur-text-hover:#fff;
     /* couleur de fond */
-    --couleur-de-fond: #00bcd4;
+    --couleur-de-fond: #e8d1f6;
+    --couleur-de-fond-btn: #29639c;
+    /* couleur hover */
+    --couleur-hover: #b73b3b;
+    --couleur-de-fond-btn-hover: #00bcd4;
 }
 
 
 body{
     font-family: 'Montserrat', sans-serif;    
+}
+
+.btn {
+    background-color: var(--couleur-de-fond-btn);
+    color: var(--couleur-text-hover);
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+.btn:hover {
+    background-color: var(--couleur-de-fond-btn-hover);
+    color: var(--couleur-text);
 }
