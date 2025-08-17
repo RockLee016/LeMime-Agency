@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* SECTION AVEC COURBE */
+.hero {
+  background-color: #212121; /* noir */
+  color: white;
+  border-bottom-right-radius: 15vw; /* 👈 crée la courbe */
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* "patch" en dessous pour lisser la courbe */
+.hero::before {
+  content: "";
+  background-color: #212121; /* même couleur que .hero */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15vw;
+  height: 15vw;
+}
+
+/* partie arrondie qui crée la jonction */
+.hero::after {
+  content: "";
+  background-color: red; /* couleur de la section suivante */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15vw;
+  height: 15vw;
+  border-top-left-radius: 15vw; /* 👈 arrondi inverse */
+}
+
+/* SECTION SUIVANTE */
+.next {
+  background-color: #f5f5f5; /* gris clair */
+  padding: 100px 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.card {
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  /* backdrop-filter: blur(6px); */
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* user-select: none; */
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="content">
+          <h1>Section Hero</h1>
+          <p>Texte ou image ici</p>
+        </div>
+      </section>
+      
+      <section class="next">
+        <h2>Section suivante</h2>
+        <p>Ton contenu continue ici…</p>
+      </section>
+
+
+
+
+      <div class="card">
+        Click me
+      </div>
+      
+</body>
+</html>

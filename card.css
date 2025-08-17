@@ -1,111 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-
-/* Déclaration de mes couleurs */
-:root{
-    /* couelur principale */
-    --body-color: #efefef;
-    /* couelur de texte */
-    --couleur-text:#212121;
-    --couleur-text-hover:#fff;
-    /* couleur de fond */
-    --couleur-de-fond: #e8d1f6;
-    --couleur-de-fond-btn: #29639c;
-    /* couleur hover */
-    --couleur-hover: #b73b3b;
-    --couleur-de-fond-btn-hover: #00bcd4;
-}
-
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--body-color);
-}
-
-.btn {
-    background-color: var(--couleur-de-fond-btn);
-    color: var(--couleur-text-hover);
-    width: 100%;
-    height: 4rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 500ms ease-in-out;
-}
-.btn:hover {
-    background-color: var(--couleur-de-fond-btn-hover);
-    color: var(--couleur-text);
-}
-
-/* Styles personnalisés pour Swiper */
-.swiper-pagination-bullet {
-    background-color: var(--couleur-de-fond-btn);
-    opacity: 0.5;
-    transition: all 0.3s ease;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--couleur-de-fond-btn-hover);
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-.swiper-scrollbar {
-    background-color: rgba(41, 99, 156, 0.2);
-}
-
-.swiper-scrollbar-drag {
-    background-color: var(--couleur-de-fond-btn);
-    border-radius: 10px;
-}
-
-.swiper-scrollbar-drag:hover {
-    background-color: var(--couleur-de-fond-btn-hover);
-}
-
-/* Boutons de navigation personnalisés */
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--couleur-de-fond-btn);
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: all 0.3s ease;
-    font-size: 3px !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background-color: var(--couleur-de-fond-btn-hover);
-    color: white;
-    transform: scale(1.1);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    /* font-weight: bold; */
-    font-size: 16px !important;
-}
-
-
-
-
-
-
-
-
-
-/* LA SECTION NOS SERVICES */
 .parent {
-    width: 300px;
-    height: 100%;
+    width: 290px;
+    height: 300px;
     perspective: 1000px;
   }
   
   .card {
     height: 100%;
     border-radius: 50px;
-    padding-bottom: 80px;
-    background: linear-gradient(135deg, var(--couleur-de-fond-btn-hover) 0%, var(--couleur-de-fond-btn) 100%);
+    background: linear-gradient(135deg, rgb(0, 255, 214) 0%, rgb(8, 226, 96) 100%);
     transition: all 0.5s ease-in-out;
     transform-style: preserve-3d;
     box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
@@ -117,12 +19,12 @@ body{
     inset: 8px;
     border-radius: 55px;
     border-top-right-radius: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.082) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
     /* -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px); */
     transform: translate3d(0px, 0px, 25px);
-    /* border-left: 1px solid white;
-    border-bottom: 1px solid white; */
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     transition: all 0.5s ease-in-out;
   }
   
@@ -133,13 +35,15 @@ body{
   
   .content .title {
     display: block;
-    color: var(--couleur-de-fond-btn);
+    color: #00894d;
     font-weight: 900;
+    font-size: 20px;
   }
   
   .content .text {
     display: block;
-    /* color: rgba(0, 137, 78, 0.7647058824); */
+    color: rgba(0, 137, 78, 0.7647058824);
+    font-size: 15px;
     margin-top: 20px;
   }
   
@@ -171,13 +75,14 @@ body{
   .bottom .view-more .view-more-button {
     background: none;
     border: none;
-    color: var(--couleur-de-fond-btn);
+    color: #00c37b;
     font-weight: bolder;
+    font-size: 12px;
   }
   
   .bottom .view-more .svg {
     fill: none;
-    stroke: var(--couleur-de-fond-btn);
+    stroke: #00c37b;
     stroke-width: 3px;
     max-height: 15px;
   }
@@ -212,11 +117,9 @@ body{
     transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
   }
   
-
   .bottom .social-buttons-container .social-button .svg {
     width: 15px;
-    fill: var(--couleur-de-fond-btn);
-    transition: 0.2s ease-in-out;
+    fill: #00894d;
   }
   
   .bottom .social-buttons-container .social-button:hover {
@@ -228,7 +131,7 @@ body{
   }
   
   .bottom .social-buttons-container .social-button:active {
-    background: var(--couleur-hover);
+    background: rgb(255, 234, 0);
   }
   
   .bottom .social-buttons-container .social-button:active .svg {
@@ -252,7 +155,7 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    background: rgba(0, 249, 203, 0.055);
+    background: rgba(0, 249, 203, 0.2);
     transition: all 0.5s ease-in-out;
   }
   
@@ -305,7 +208,7 @@ body{
   }
   
   .parent:hover .card {
-    transform: rotate3d(1, 0, 0, 20deg);
+    transform: rotate3d(1, 1, 0, 30deg);
     box-shadow: rgba(5, 71, 17, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
   }
   

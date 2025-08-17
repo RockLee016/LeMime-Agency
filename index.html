@@ -105,10 +105,10 @@
         </div>
     <!-- Le menu de la tablette et mobile inferieur -->
 
-    <main>
+    <main class="">
         <!-- la structure exigée par swiper -->
         <!-- le slider main container -->
-        <section class="swiper hero h-screen w-sreen overflow-hidden">
+        <section id="Hero" class="swiper hero h-screen w-sreen overflow-hidden">
             <!-- la dive requise -->
             <div class="swiper-wrapper w-full h-full">
                 <!-- slides -->
@@ -116,16 +116,18 @@
                     <div class="swiper-slide w-full h-full relative">
                         <img src="assets/images/images_carousel/Publicité.webp" alt="image carrousel" class="w-full h-full object-cover">
                         <div id="carre_noir" class="slide-overlay absolute top-0 left-0 w-full md:w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
-                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-[70%] h-full">
-                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
-                                <div id="headline" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Boostez la visibilité de votre marque</div>
-
-                                <div id="description" class="w-[80%] description opacity-0 animate__animated duration-500">
-                                    Atteignez votre audience avec des campagnes publicitaires percutantes et adaptées à vos besoins.
-                                </div>
-
-                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
-                                    <button type="button" class="btn">Découvrir nos pubs</button>
+                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
+                            <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
+                                <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
+                                    <div id="headline" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Boostez la visibilité de votre marque</div>
+    
+                                    <div id="description" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                        Atteignez votre audience avec des campagnes publicitaires percutantes et adaptées à vos besoins.
+                                    </div>
+    
+                                    <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                        <button type="button" class="btn">Découvrir nos pubs</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,16 +139,18 @@
                     <div class="swiper-slide w-full h-full relative">
                         <img src="assets/images/images_carousel/Digital_Marketing.webp" alt="image carrousel" class="w-full h-full object-cover">
                         <div id="carre_noir_marketing_digital" class="slide-overlay absolute top-0 left-0 w-full md:w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
-                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-[70%] h-full">
-                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
-                                <div id="headline_marketing_digital" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Générez de l’engagement et de la croissance</div>
-
-                                <div id="description_marketing_digital" class="w-[80%] description opacity-0 animate__animated duration-500">
-                                    Exploitez des stratégies basées sur les données pour développer votre activité en ligne et toucher votre audience.
-                                </div>
-
-                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
-                                    <button type="button" class="btn" id="btn_marketing_digital">Voir nos stratégies</button>
+                        <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
+                            <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
+                                <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
+                                    <div id="headline_marketing_digital" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Développez votre audience durablelement</div>
+    
+                                    <div id="description_marketing_digital" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                        Exploitez des stratégies basées sur les données pour développer votre activité en ligne et toucher votre audience.
+                                    </div>
+    
+                                    <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                        <button type="button" class="btn" id="btn_marketing_digital">Voir nos stratégies</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -155,19 +159,21 @@
 
 
                 <!-- slide 3 Branding & Identité Visuelle -->
-                    <div class="swiper-slide w-full h-full relative hidden">
+                    <div class="swiper-slide w-full h-full relative">
                         <img src="assets/images/images_carousel/Branding_Identité_visuelle.webp" alt="image carrousel" class="w-full h-full object-cover">
                         <div id="carre_noir_Branding" class="slide-overlay absolute top-0 left-0 w-full md:w-[70%] h-0 bg-black opacity-50 duration-1000"></div>
                         <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
-                            <div class="mt-38 w-full h-full px-10 py-5 space-y-8">
-                                <div id="headline_Branding" class="headline text-2xl md:text-[3em] font-bold w-[50%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Créez une identité mémorable</div>
-
-                                <div id="description_Branding" class="w-[80%] description opacity-0 animate__animated duration-500">
-                                    Concevez une image de marque unique qui capte l’attention et inspire confiance auprès de vos clients.
-                                </div>
-
-                                <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
-                                    <button type="button" class="btn" id="btn_Branding">Voir nos stratégies</button>
+                            <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
+                                <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
+                                    <div id="headline_Branding" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Créez une identité mémorable</div>
+    
+                                    <div id="description_Branding" class="w-[80%] description opacity-0 animate__animated duration-500">
+                                        Concevez une image de marque unique qui capte l’attention et inspire confiance auprès de vos clients.
+                                    </div>
+    
+                                    <div class="cta w-full md:w-[50%] opacity-0 animate__animated duration-500">
+                                        <button type="button" class="btn" id="btn_Branding">Voir nos stratégies</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -187,13 +193,249 @@
         </section>
         <!-- la structure exigée par swiper -->
 
-        <div class="text-black">
-            je suis ici que pour le srolling gros
-        </div>
-        <div class="text-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est excepturi id, et officia optio quos dolorem aliquid inventore delectus consectetur reprehenderit omnis beatae alias ipsum quis, eos itaque. Ea.
-        </div>
+        
+        
+        
+        
+        <!-- Nos services -->
+        <section id="Nos_services" class="px-10 py-16 bg-[#212121] space-y-16 relative rounded-br-[15vw] before:content-[''] before:z-[2] before:bg-[#212121] before:absolute before:top-full before:left-0 before:w-[15vw] before:h-[15vw] after:z-[3] after:content-[''] after:bg-[#efefef] after:absolute after:top-full after:left-0 after:w-[15vw] after:h-[15vw] after:rounded-tl-[15vw]">
+            <div class="w-full space-y-4">
+                <h1 class="w-full text-center font-bold text-4xl tracking-widest">Nos services</h1>
+                <p class=" w-[70%] mx-auto text-center">Chez LeMime Agency, nous combinons créativité et stratégie pour propulser votre marque. Chaque service est pensé pour maximiser votre visibilité et engager votre audience. Faites confiance à notre expertise pour transformer vos idées en résultats concrets.</p>
+            </div>
+            <div class="flex flex-col gap-6 lg:flex-row lg:gap-10 lg:justify-around justify-center items-center">
+                <div class="parent">
+                    <div class="card">
+                        <div class="logo">
+                            <!-- <span class="circle circle1"></span> -->
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                01
+                            </span>
+            
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title text-[1.5rem]">Publicité digitale</span>
+                            <span class="text lg:text-base">Des campagnes en ligne ciblées (Google Ads, Facebook, Instagram…) pour accroître votre visibilité et toucher les bons clients au bon moment.</span>
+                        </div>
+                        <div class="bottom">
+                            
+                            <div class="social-buttons-container">
+                                <button class="social-button .social-button1">
+                                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                                      </svg></button>
+                                  <button class="social-button .social-button2">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                      </svg>
+                                  </button>
+                                  <button class="social-button .social-button3">
+                                    <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                                      </svg>
+                                  </button>
+                            </div>
+                            <div class="view-more">
+                                <button class="view-more-button text-xs">View more</button>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="parent">
+                    <div class="card">
+                        <div class="logo">
+                            <!-- <span class="circle circle1"></span> -->
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                02
+                            </span>
+            
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title text-[1.5rem]">Marketing digital</span>
+                            <span class="text lg:text-base">Stratégies digitales sur mesure : gestion des réseaux sociaux, SEO, e-mailing… pour booster votre croissance et fidéliser votre audience.</span>
+                        </div>
+                        <div class="bottom">
+                            
+                            <div class="social-buttons-container">
+                                <button class="social-button .social-button1">
+                                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                                      </svg></button>
+                                  <button class="social-button .social-button2">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                      </svg>
+                                  </button>
+                                  <button class="social-button .social-button3">
+                                    <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                                      </svg>
+                                  </button>
+                            </div>
+                            <div class="view-more">
+                                <button class="view-more-button text-xs xl:text-base">View more</button>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="parent">
+                    <div class="card">
+                        <div class="logo">
+                            <!-- <span class="circle circle1"></span> -->
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                            <span class="circle circle5">
+                                03
+                            </span>
+            
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title text-[1.5rem]">Branding et Identité visuelle</span>
+                            <span class="text lg:text-base">Création de logos, chartes graphiques et univers visuels uniques qui reflètent vos valeurs et rendent votre marque inoubliable.</span>
+                        </div>
+                        <div class="bottom">
+                            
+                            <div class="social-buttons-container">
+                                <button class="social-button .social-button1">
+                                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                                      </svg></button>
+                                  <button class="social-button .social-button2">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                      </svg>
+                                  </button>
+                                  <button class="social-button .social-button3">
+                                    <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                        <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path>
+                                      </svg>
+                                  </button>
+                            </div>
+                            <div class="view-more">
+                                <button class="view-more-button text-xs xl:text-base">View more</button>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Nos services -->
+
+        
+        
+        
+        
+        <!-- Nos réalisations -->
+         <section id="Nos_realisations" class="px-10 py-16 relative z-[4] text-black space-y-16">
+            <div class="w-full space-y-4">
+                <h1 class="w-full text-center font-bold text-4xl tracking-widest text-[#29639c]">Nos réalisations</h1>
+                <p class=" w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
+            </div>
+
+            <div id="contener_realisations" class="space-y-6">
+                <div class="flex flex-col justify-center items-center lg:gap-6 lg:flex-row h-[36rem]">
+                    <div id="contenu_realisations" class="relative w-full space-y-6 rounded-tl-[50px] rounded-tr-[50px] md:w-[40%] lg:rounded-[50px] p-10" style="box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);">
+
+                        <div id="project_title" class="absolute -top-[4rem] left-0 right-0 w-[85%] mx-auto h-[40%] rounded-[50px] bg-[#efefef]" style="box-shadow: 12px 7px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);">
+                            <p class="font-extrabold text-center text-[1rem] tracking-widest text-[#29639c]">Campagne de lancement</p>
+                        </div>
+                        
+
+                        <div id="client" class="mt-32">
+                            <p class="font-bold">CLient :</p>
+                            <p>Café Aroma</p>
+                        </div>
+
+                        <div id="project_problem">
+                            <p class="font-semibold">Problème / Objectif :</p>
+                            <p>La marque devait lancer son nouveau café bio et gagner en visibilité auprès d’un public jeune et urbain.</p>
+                        </div>
+
+                        <div id="solution">
+                            <p class="font-semibold">Solution : </p>
+                            <p>Création d’une identité visuelle moderne et d’une campagne publicitaire digitale et physique.</p>
+                        </div>
+                        <div id="description" class="hidden">
+                            <p class="font-semibold">description :</p>
+                            <p>
+                                LeMime Agency a conçu un branding chaleureux, des visuels dynamiques pour les réseaux sociaux et une campagne d’affichage urbain. 
+                                Le slogan “Réveillez vos sens, goûtez l’authenticité” a permis de positionner Café Aroma comme une marque à la fois moderne et authentique.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="participants" class="border border-t-black w-full h-full rounded-bl-[50px] rounded-br-[50px] shadow md:w-[50%] lg:w-[30%] lg:rounded-none lg:shadow-none lg:border-0 ">
+                        <!-- la structure de swiper -->
+                         <!-- le conteneur pricipal -->
+                         <div class="swiper w-full h-full">
+                            <!-- le contener des slides -->
+                            <div class="swiper-wrapper w-full h-full">
+                                <!-- ls slides -->
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
+                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_2.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
+                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_3.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
+                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_4.png" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
+                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- la paginationpagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- buttons de navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                         </div>
+                        <!-- la structure de swiper -->
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Nos réalisations -->
     </main>
+    <footer class="text-black">
+        fais le paralax de swiper pour le hero
+    </footer>
 
 
 
