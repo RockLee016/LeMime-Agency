@@ -29,3 +29,29 @@ export function addListenerMenuAmberger (baliseName, baliseMenu, baliseClose) {
         close_menu (baliseMenu);
     });
 }
+
+
+
+// Cette fonction va faire apparaitre les buble.
+export function buble () {
+    let count = 200;
+    let section = document.querySelector('#Nos_realisations');
+    let i = 0;
+    while (i < count) {
+      let buble = document.createElement('i');
+      buble.className = "buble";
+      let x = Math.floor(Math.random() * window.innerWidth);
+      let y = Math.floor(Math.random() * window.innerHeight);
+      let size = Math.random() * 10;
+      
+      buble.style.left = x+"px";
+      buble.style.top = 2*y+"px";
+      buble.style.width = 2+size+"px";
+      buble.style.height = 2+size+"px";
+      buble.style.animationDuration = 5+size+"s";
+      buble.style.animationDelay = -size+"s";
+      section.appendChild(buble);
+      i++;
+    }
+    
+}

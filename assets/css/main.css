@@ -344,3 +344,36 @@ body{
   .parent:hover .card .logo .circle5 {
     transform: translate3d(0, 0, 120px);
   }
+
+
+
+  /* SECTION NOS REALISATIONS */
+  .buble {
+    position: absolute;
+    background-color: var(--couleur-de-fond-btn-hover);
+    border-radius: 50%;
+    animation: animate linear infinite;
+    z-index: -1;
+  }
+  
+  .buble:nth-child(even) {
+    background-color: transparent;
+    border: 1px solid var(--couleur-de-fond-btn);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-2000%);
+      opacity: 0;
+    }
+  }

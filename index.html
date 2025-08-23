@@ -343,7 +343,7 @@
         
         
         <!-- Nos réalisations -->
-         <section id="Nos_realisations" class="px-10 py-16 relative z-[4] text-black space-y-16">
+         <section id="Nos_realisations" class="px-10 py-16 relative z-[4] text-black space-y-16 overflow-hidden">
             <div class="w-full space-y-4">
                 <h1 class="w-full text-center font-bold text-4xl tracking-widest text-[#29639c]">Nos réalisations</h1>
                 <p class=" w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
@@ -351,108 +351,48 @@
 
             <div id="contener_realisations" class="space-y-6 px-10">
                 <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row">
-                    <div id="contenu_realisations" class="relative w-full space-y-4">
+                    <div id="contenu_realisations" class="relative w-full lg:w-[28rem] rounded-[50px] bg-white border border-red-500" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
                         <!-- <div class="glasses"></div> -->
 
-                        <div id="project_title" class="relative z-50">
-                            <p class="font-extrabold text-center text-[2.5rem] tracking-widest text-[#29639c]">Café Aroma - Campagne de lancement</p>
-                        </div>
-
-                        <div id="defi" class="relative z-50 hidden">
-                            <p class="font-semibold">Défi :</p>
-                            <p>
-                                Se démarquer dans un marché saturé et séduire une clientèle jeune et urbaine.
-                            </p>
-                        </div>
-
-                        <div id="solution" class="relative z-50">
-                            <p class="font-semibold">Solution : </p>
-                            <p>
-                                Une campagne digitale immersive avec site vitrine interactif, identité visuelle unique et campagne sociale engageante.
-                                #MonMomentAroma.
-                            </p>
-                        </div>
-
-                        <button type="button" id="voir_le_projet" class="btn w-[20%] relative z-50" style="width: 40% !important;">
-                            Voir le projet
-                        </button>
-                    </div>
-
-                    <div id="participants" class="border border-t-black w-full h-full rounded-bl-[50px] rounded-br-[50px] shadow md:w-[50%] lg:w-[30%] lg:rounded-none lg:shadow-none lg:border-0 ">
-                        <!-- la structure de swiper -->
-                         <!-- le conteneur pricipal -->
-                         <div class="swiper w-full h-full">
-                            <!-- le contener des slides -->
-                            <div class="swiper-wrapper w-full h-full">
-                                <!-- ls slides -->
-                                <div class="swiper-slide relative w-full h-full overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.webp" alt="" class="object-cover h-full">
-                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative w-full h-full overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_2.webp" alt="" class="object-cover h-full">
-                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative w-full h-full overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_3.webp" alt="" class="object-cover h-full">
-                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_4.png" alt="" class="object-cover w-full h-full">
-                                    <div id="member_informations" class="absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black opacity-80 space-y-2">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
-                                    </div>
-                                </div>
+                        <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50 border">
+                            <div class="w-10 h-10 rounded-full overflow-hidden border">
+                                <img src="assets/images/images_realisations/equipe_pub/A (7).png" alt="" class="w-full h-full object-cover">
                             </div>
-                            
-                            <!-- la paginationpagination -->
-                            <div class="swiper-pagination"></div>
-
-                            <!-- buttons de navigation -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                         </div>
-                        <!-- la structure de swiper -->
-                    </div>
-                </div>
-                
-                <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row-reverse">
-                    <div id="contenu_realisations" class="relative w-full space-y-4">
-                        <!-- <div class="glasses"></div> -->
-
-                        <div id="project_title" class="relative z-50">
-                            <p class="font-extrabold text-center text-[2.5rem] tracking-widest text-[#29639c]">Café Aroma - Campagne de lancement</p>
+                            <p class="font-extrabold text-2xl text-[#29639c]">Campagne de lancement</p>
                         </div>
 
-                        <div id="defi" class="relative z-50">
-                            <p class="font-semibold">Défi :</p>
-                            <p>
-                                Se démarquer dans un marché saturé et séduire une clientèle jeune et urbaine.
-                            </p>
+                        <div id="image_du_projet" class="w-full h-68">
+                            <img src="assets/images/images_realisations/equipe_pub/B (4).png" alt="" class="w-full h-full object-cover">
                         </div>
 
-                        <div id="solution" class="relative z-50">
-                            <p class="font-semibold">Solution : </p>
-                            <p>
-                                Une campagne digitale immersive avec site vitrine interactif, identité visuelle unique et campagne sociale engageante.
-                                #MonMomentAroma.
-                            </p>
+                        <div id="defi_solution_btn" class="p-4 space-y-4">
+                            <div id="defi" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Défi :</p>
+                                <p>
+                                    Se démarquer dans un marché saturé et séduire une clientèle jeune et urbaine.
+                                </p>
+                            </div>
+    
+                            <div id="solution" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Solution : </p>
+                                <p>
+                                    Une campagne digitale immersive avec site vitrine interactif, identité visuelle unique et campagne sociale engageante.
+                                </p>
+                                <p>#MonMomentAroma</p>
+                            </div>
+
+                            <div id="btn_participants" class="border w-full h-full flex items-center justify-between">
+                                <button type="button" id="voir_le_projet" class="btn relative z-50 border" style="width: 40% !important; height: 3rem !important;">
+                                    Voir le projet
+                                </button>
+
+                                <div id="les_participants" class="border mr-10 lg:hidden">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.webp" alt="" class="w-10 h-10 object-contain rounded-full">
+                                </div>
+    
+                            </div>
                         </div>
 
-                        <button type="button" id="voir_le_projet" class="btn w-[20%] relative z-50" style="width: 40% !important;">
-                            Voir le projet
-                        </button>
                     </div>
 
                     <div id="participants" class="border border-t-black w-full h-full rounded-bl-[50px] rounded-br-[50px] shadow md:w-[50%] lg:w-[30%] lg:rounded-none lg:shadow-none lg:border-0 ">
