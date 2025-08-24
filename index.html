@@ -52,7 +52,7 @@
         </div>
     </header>
     <!-- Le menu de la tablette et mobile inferieur -->
-        <div id="menu_contact" class="fixed w-screen h-screen top-0 left-0 flex flex-col-reverse md:flex-row lg:hidden z-[9999] text-white -translate-y-0 transition duration-1000 ease-in-out">
+        <div id="menu_contact" class="hidden fixed w-screen h-screen top-0 left-0 flex flex-col-reverse md:flex-row lg:hidden z-[9999] text-white -translate-y-0 transition duration-1000 ease-in-out">
             <div class="fixed p-2 md:p-6 top-0 left-0 w-full z-30">
                 <div class="flex justify-between items-center h-8 md:h-10">
                     <div id="nom_de_agence" class="text-white text-2xl md:text-[2.5em] font-bold">LeMime Agency</div>
@@ -350,19 +350,20 @@
                 <p class="w-[90%] md:w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
             </div>
 
-            <div id="contener_realisations" class="space-y-6 md:px-10">
+            <div id="contener_realisations" class="space-y-6 lg:space-y-32 md:px-10">
+                <!-- la projet pub -->
                 <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row">
-                    <div id="contenu_realisations" class="relative w-full lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+                    <div id="contenu_realisations" class="relative w-[80%] lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
 
                         <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
                             <div class="w-10 h-10 rounded-full overflow-hidden">
-                                <img src="assets/images/images_realisations/equipe_pub/A (7).png" alt="" class="w-full h-full object-cover">
+                                <img src="assets/images/images_realisations/equipe_pub/café_aroma_logo.webp" alt="" class="w-full h-full object-cover">
                             </div>
-                            <p class="font-extrabold text-base sm:text-lg md:text-2xl text-[#29639c]">Campagne de lancement</p>
+                            <p class="font-extrabold w-[80%] text-base sm:text-lg md:text-2xl text-[#29639c]">Campagne de lancement</p>
                         </div>
 
                         <div id="image_du_projet" class="w-full h-68">
-                            <img src="assets/images/images_realisations/equipe_pub/B (3).png" alt="" class="w-full h-full object-cover">
+                            <img src="assets/images/images_realisations/equipe_pub/café_aroma_site.webp" alt="" class="w-full h-full object-cover">
                         </div>
 
                         <div id="defi_solution_btn" class="p-4 space-y-4">
@@ -386,8 +387,35 @@
                                     Voir le projet
                                 </button>
 
-                                <div id="les_participants" class="border w-10 h-10 mr-10 overflow-hidden rounded-full lg:hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.png" alt="" class="w-10 h-10 object-cover">
+                                <div id="les_participants" class="w-40 h-10 overflow-hidden lg:hidden">
+                                    <div class="swiper swiper_pub_mobile w-full h-full">
+                                        <!-- le contener des slides -->
+                                        <div class="swiper-wrapper w-full h-full">
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_2_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_3_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_4_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
     
                             </div>
@@ -395,39 +423,39 @@
 
                     </div>
 
-                    <div id="participants" class="border border-t-black w-full h-full rounded-bl-[50px] rounded-br-[50px] shadow md:w-[50%] lg:w-[30%] lg:rounded-none lg:shadow-none lg:border-0 overflow-hidden">
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
                         <!-- la structure de swiper -->
                          <!-- le conteneur pricipal -->
-                         <div class="swiper swiper_2 w-full h-full">
+                         <div class="swiper swiper_pub w-full h-full">
                             <!-- le contener des slides -->
                             <div class="swiper-wrapper w-full h-full">
                                 <!-- ls slides -->
                                 <div class="swiper-slide relative w-full h-full overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.webp" alt="" class="object-cover h-full w-full border">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub.webp" alt="" class="object-cover h-full w-full">
                                     <div id="member_informations" class="member_informations absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martine MBEBOU</h1>
+                                        <p id="description" class="text-white text-xs text-center">Responsable du projet, Chef de projet digital</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide relative w-full h-full overflow-hidden">
                                     <img src="assets/images/images_realisations/equipe_pub/equipe_pub_2.webp" alt="" class="object-cover h-full">
                                     <div id="member_informations" class="member_informations absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Zola N’DINGA</h1>
+                                        <p id="description" class="text-white text-xs text-center">UX/UI Designer</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide relative w-full h-full overflow-hidden">
                                     <img src="assets/images/images_realisations/equipe_pub/equipe_pub_3.webp" alt="" class="object-cover h-full">
                                     <div id="member_informations" class="member_informations absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Sade OKOYE</h1>
+                                        <p id="description" class="text-white text-xs text-center">Graphiste / Branding</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide relative w-full h-auto overflow-hidden">
-                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_4.png" alt="" class="object-cover w-full h-full">
+                                    <img src="assets/images/images_realisations/equipe_pub/equipe_pub_4.webp" alt="" class="object-cover w-full h-full">
                                     <div id="member_informations" class="member_informations absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
-                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Martin MBEBOU</h1>
-                                        <p id="description" class="text-white text-xs text-center">Resposable du projet, Design Manager</p>
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Taye MBEMBA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Développeur Full-Stack</p>
                                     </div>
                                 </div>
                             </div>
@@ -442,9 +470,316 @@
                         <!-- la structure de swiper -->
                     </div>
                 </div>
+                <!-- la projet pub -->
+
+                <!-- Branding et identité visuelle -->
+                <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row-reverse">
+                    <div id="contenu_realisations" class="relative w-[80%] lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+
+                        <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="assets/images/images_realisations/equipe_branding/FitLife_logo.webp" alt="Application mobile de suivi sportif FitLife" class="w-full h-full object-cover">
+                            </div>
+                            <p class="font-extrabold w-[80%] text-base sm:text-lg md:text-2xl text-[#29639c]">Application mobile de suivi sportif</p>
+                        </div>
+
+                        <div id="image_du_projet" class="w-full h-68">
+                            <img src="assets/images/images_realisations/equipe_branding/FitLife_interface.webp" alt="image du projet" class="w-full h-full object-cover">
+                        </div>
+
+                        <div id="defi_solution_btn" class="p-4 space-y-4">
+                            <div id="defi" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Défi :</p>
+                                <p>
+                                    La marque voulait se différencier dans un marché saturé des apps de fitness, avec une identité forte et une expérience utilisateur motivante.
+                                </p>
+                            </div>
+    
+                            <div id="solution" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Solution : </p>
+                                <p>
+                                    LeMime Agency a conçu une identité visuelle dynamique et moderne (palette de couleurs vives, logo énergique, typographies modernes) et a développé une application mobile intuitive avec un design UI/UX centré sur la motivation et la progression.
+                                </p>
+                                <p>#FiTLife</p>
+                            </div>
+
+                            <div id="btn_participants" class="border-t border-gray-300 pt-4 w-full h-full flex items-center justify-between">
+                                <button type="button" id="voir_le_projet" class="btn relative z-50" style="width: 40% !important; height: 3rem !important;">
+                                    Voir le projet
+                                </button>
+
+                                <div id="les_participants" class="w-40 h-10 overflow-hidden lg:hidden">
+                                    <div class="swiper swiper_branding_mobile w-full h-full">
+                                        <!-- le contener des slides -->
+                                        <div class="swiper-wrapper w-full h-full">
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_2_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_3_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_4_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_5_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_6_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
+                        <!-- la structure de swiper -->
+                         <!-- le conteneur pricipal -->
+                         <div class="swiper swiper_branding w-full h-full">
+                            <!-- le contener des slides -->
+                            <div class="swiper-wrapper w-full h-full">
+                                <!-- ls slides -->
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding.webp" alt="" class="object-cover h-full w-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Kendi OBIANG</h1>
+                                        <p id="description" class="text-white text-xs text-center">Chef de projet digital</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_2.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Nia OKAFOR</h1>
+                                        <p id="description" class="text-white text-xs text-center">UX/UI Designer</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_3.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Amara KOUADIO</h1>
+                                        <p id="description" class="text-white text-xs text-center">Community & Social Media Manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_4.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Abenie TOURE</h1>
+                                        <p id="description" class="text-white text-xs text-center">Graphiste / Branding</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_5.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Iyaya MBARAKA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Développeur Full - Stack</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_branding/equipe_branding_6.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_branding absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Jelani MBAYE</h1>
+                                        <p id="description" class="text-white text-xs text-center">Photographe / Contenu visuel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- la pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- buttons de navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                         </div>
+                        <!-- la structure de swiper -->
+                    </div>
+                </div>
+                <!-- Branding et identité visuelle -->
+
+                <!-- le Marketing digital -->
+                <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row">
+                    <div id="contenu_realisations" class="relative w-[80%] lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+
+                        <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="assets/images/images_realisations/equipe_marketing/shopwise_logo.webp" alt="Logo ShopWise" class="w-full h-full object-cover">
+                            </div>
+                            <p class="font-extrabold w-[80%] text-base sm:text-lg md:text-2xl text-[#29639c]"> Stratégie marketing</p>
+                        </div>
+
+                        <div id="image_du_projet" class="w-full h-68">
+                            <img src="assets/images/images_realisations/equipe_marketing/shopwise_maquette.webp" alt="image du projet" class="w-full h-full object-cover">
+                        </div>
+
+                        <div id="defi_solution_btn" class="p-4 space-y-4">
+                            <div id="defi" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Défi :</p>
+                                <p>
+                                    ShopWise voulait augmenter ses ventes en ligne et fidéliser ses clients grâce à des campagnes marketing ciblées et personnalisées.
+                                </p>
+                            </div>
+    
+                            <div id="solution" class="relative z-50 text-gray-500">
+                                <p class="font-semibold text-black">Solution : </p>
+                                <p>
+                                    LeMime Agency a mis en place une stratégie marketing digitale complète : emailings personnalisés, campagnes sur les réseaux sociaux, retargeting publicitaire et analyse de données pour optimiser les conversions.
+                                </p>
+                                <p>#ShopWise</p>
+                            </div>
+
+                            <div id="btn_participants" class="border-t border-gray-300 pt-4 w-full h-full flex items-center justify-between">
+                                <button type="button" id="voir_le_projet" class="btn relative z-50" style="width: 40% !important; height: 3rem !important;">
+                                    Voir le projet
+                                </button>
+
+                                <div id="les_participants" class="w-40 h-10 overflow-hidden lg:hidden">
+                                    <div class="swiper swiper_marketing_mobile w-full h-full">
+                                        <!-- le contener des slides -->
+                                        <div class="swiper-wrapper w-full h-full">
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_2_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_3_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_4_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_5_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide w-full h-full">
+                                                <div class="w-10 h-10 mx-auto overflow-hidden rounded-full lg:hidden">
+                                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_6_portrait.webp" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
+                        <!-- la structure de swiper -->
+                         <!-- le conteneur pricipal -->
+                         <div class="swiper swiper_marketing w-full h-full">
+                            <!-- le contener des slides -->
+                            <div class="swiper-wrapper w-full h-full">
+                                <!-- ls slides -->
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing.webp" alt="" class="object-cover h-full w-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Taye AFOLABI</h1>
+                                        <p id="description" class="text-white text-xs text-center">Data Analyst & CRM, Responsable du projet</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_2.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Kofi ABIOLA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Social Media & Community Manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-full overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_3.webp" alt="" class="object-cover h-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Herly KAMARA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Content Creator & Copywriting</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_4.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Imanie BEMBA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Développeuse web Full-Stack / Intégration marketing</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_5.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Yara OKONDZE</h1>
+                                        <p id="description" class="text-white text-xs text-center">Chef de projet marketing digital</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide relative w-full h-auto overflow-hidden">
+                                    <img src="assets/images/images_realisations/equipe_marketing/equipe_marketing_6.webp" alt="" class="object-cover w-full h-full">
+                                    <div id="member_informations" class="member_informations_marketing absolute bottom-0 left-0 right-0 w-[75%] mx-auto p-4 bg-black h-30 overflow-hidden space-y-2 duration-500 ease-in-out opacity-0 animate__animated">
+                                        <h1 id="title" class="text-base font-bold text-center w-full text-white mix-blend-difference isolate">Nathan IBENGA</h1>
+                                        <p id="description" class="text-white text-xs text-center">Graphiste & Designer de campagne</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- la pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- buttons de navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                         </div>
+                        <!-- la structure de swiper -->
+                    </div>
+                </div>
+                <!-- le Marketing digital -->
             </div>
          </section>
         <!-- Nos réalisations -->
+
+
+
+
+        <!-- La section des chiffres -->
+        <section id="section_nos_valeur" class="px-5 md:px-10 space-y-16 bg-black relative rounded-tr-[15vw] before:content-[''] before:absolute before:bottom-full before:left-0 before:w-[15vw] before:h-[15vw] before:bg-black before:z-[2] after:content-[''] after:absolute after:bottom-full after:left-0 after:w-[15vw] after:h-[15vw] after:bg-[#efefef] after:z-[3] after:rounded-bl-[15vw]">
+            <div class="w-full text-center p-16 space-y-4">
+                <h1 class="font-bold text-4xl tracking-widest">Nos Valeurs</h1>
+                <p class="w-[90%] md:w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
+            </div>
+        </section>
+        <!-- La section des chiffres -->
     </main>
     <footer class="text-black">
         fais le paralax de swiper pour le hero

@@ -348,6 +348,9 @@ body{
 
 
   /* SECTION NOS REALISATIONS */
+  #Nos_realisations{
+    position: relative;
+  }
   .buble {
     position: absolute;
     background-color: var(--couleur-de-fond-btn-hover);

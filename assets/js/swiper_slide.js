@@ -105,8 +105,10 @@ const swiper = new Swiper (".swiper_1", {
     }
 });
 
-const swiper_2 = new Swiper (".swiper_2", {
+// Nos réalisation: PUBLICITE
+const swiper_pub = new Swiper (".swiper_pub", {
     loop: false,
+    speed:800,
     effect: "cards",
     cardsEffect: {
         slideShadows: false,
@@ -115,13 +117,13 @@ const swiper_2 = new Swiper (".swiper_2", {
         rotate: true
     },
     pagination: {
-        el: '.swiper_2 .swiper-pagination',
+        el: '.swiper_pub .swiper-pagination',
         clickable: true,
     },
     
     navigation: {
-        prevEl: ".swiper_2 .swiper-button-prev",
-        nextEl: ".swiper_2 .swiper-button-next"
+        prevEl: ".swiper_pub .swiper-button-prev",
+        nextEl: ".swiper_pub .swiper-button-next"
     },
 
     // les animation quand le slide change
@@ -159,3 +161,153 @@ const swiper_2 = new Swiper (".swiper_2", {
     }
 });
 
+const swiper_mobile = new Swiper (".swiper_pub_mobile", {
+    loop:false,
+    effect: "cards",
+    cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 20,
+        perSlideRotate: 4,
+        rotate: true
+    },
+    speed: 1200,
+    autoplay:{delay:5000}
+});
+
+// Nos réalisation: BRANDING & IDENTITE VISUELLE
+const swiper_branding = new Swiper (".swiper_branding", {
+    loop: false,
+    speed:800,
+    effect: "cards",
+    cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 20,
+        perSlideRotate: 4,
+        rotate: true
+    },
+    pagination: {
+        el: '.swiper_branding .swiper-pagination',
+        clickable: true,
+    },
+    
+    navigation: {
+        prevEl: ".swiper_branding .swiper-button-prev",
+        nextEl: ".swiper_branding .swiper-button-next"
+    },
+
+    // les animation quand le slide change
+    on:{
+        init() {
+            const root = this.el;
+            // assurer la classe base Animate.css + état initial
+            root.querySelectorAll(".member_informations_branding").forEach(el => {
+            //   el.classList.add("animate__animated");
+              el.classList.remove("animate__fadeInUp","animate__fadeOutDown","opacity-80");
+            //   el.classList.add("opacity-0");
+            });
+            const active = root.querySelector(".swiper-slide-active .member_informations_branding");
+            if (active) {
+              active.classList.remove("opacity-0","animate__fadeOutDown");
+              active.classList.add("opacity-80","animate__fadeInUp");
+            }
+          },
+          slideChangeTransitionStart () {
+            const root = this.el;
+      
+            // reset tout le monde
+            root.querySelectorAll(".member_informations_branding").forEach(el => {
+              el.classList.remove("opacity-80","animate__fadeInUp");
+              el.classList.add("opacity-0","animate__fadeOutDown");
+            });
+      
+            // activer uniquement la slide active
+            const active = root.querySelector(".swiper-slide-active .member_informations_branding");
+            if (active) {
+              active.classList.remove("opacity-0","animate__fadeOutDown");
+              active.classList.add("opacity-80","animate__fadeInUp");
+            }
+          }
+    }
+});
+
+const swiper_branding_mobile = new Swiper (".swiper_branding_mobile", {
+    loop:false,
+    effect: "cards",
+    cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 20,
+        perSlideRotate: 4,
+        rotate: true
+    },
+    speed: 1200,
+    autoplay:{delay:5000}
+});
+
+// Nos réalisation: MARKETING DIGITAL
+const swiper_marketing = new Swiper (".swiper_marketing", {
+    loop: false,
+    speed:800,
+    effect: "cards",
+    cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 20,
+        perSlideRotate: 4,
+        rotate: true
+    },
+    pagination: {
+        el: '.swiper_marketing .swiper-pagination',
+        clickable: true,
+    },
+    
+    navigation: {
+        prevEl: ".swiper_marketing .swiper-button-prev",
+        nextEl: ".swiper_marketing .swiper-button-next"
+    },
+
+    // les animation quand le slide change
+    on:{
+        init() {
+            const root = this.el;
+            // assurer la classe base Animate.css + état initial
+            root.querySelectorAll(".member_informations_marketing").forEach(el => {
+            //   el.classList.add("animate__animated");
+              el.classList.remove("animate__fadeInUp","animate__fadeOutDown","opacity-80");
+            //   el.classList.add("opacity-0");
+            });
+            const active = root.querySelector(".swiper-slide-active .member_informations_marketing");
+            if (active) {
+              active.classList.remove("opacity-0","animate__fadeOutDown");
+              active.classList.add("opacity-80","animate__fadeInUp");
+            }
+          },
+          slideChangeTransitionStart () {
+            const root = this.el;
+      
+            // reset tout le monde
+            root.querySelectorAll(".member_informations_marketing").forEach(el => {
+              el.classList.remove("opacity-80","animate__fadeInUp");
+              el.classList.add("opacity-0","animate__fadeOutDown");
+            });
+      
+            // activer uniquement la slide active
+            const active = root.querySelector(".swiper-slide-active .member_informations_marketing");
+            if (active) {
+              active.classList.remove("opacity-0","animate__fadeOutDown");
+              active.classList.add("opacity-80","animate__fadeInUp");
+            }
+          }
+    }
+});
+
+const swiper_marketing_mobile = new Swiper (".swiper_marketing_mobile", {
+    loop:false,
+    effect: "cards",
+    cardsEffect: {
+        slideShadows: false,
+        perSlideOffset: 20,
+        perSlideRotate: 4,
+        rotate: true
+    },
+    speed: 1200,
+    autoplay:{delay:5000}
+});
