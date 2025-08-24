@@ -33,15 +33,15 @@ export function addListenerMenuAmberger (baliseName, baliseMenu, baliseClose) {
 
 
 // Cette fonction va faire apparaitre les buble.
-export function buble () {
+export function buble (balise) {
     let count = 200;
-    let section = document.querySelector('#Nos_realisations');
+    let section = document.querySelector(balise);
     let i = 0;
     while (i < count) {
       let buble = document.createElement('i');
       buble.className = "buble";
-      let x = Math.floor(Math.random() * window.innerWidth);
-      let y = Math.floor(Math.random() * window.innerHeight);
+      let x = Math.floor(Math.random() * section.offsetWidth);
+      let y = Math.floor(Math.random() * section.offsetHeight);
       let size = Math.random() * 10;
       
       buble.style.left = x+"px";

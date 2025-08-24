@@ -21,6 +21,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- la bibliotheque animate css pour les animation -->
 
+    <!-- la bibliotheque AOS pour les animation au scroll -->
+     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <!-- la bibliotheque AOS pour les animation au scroll -->
+
     <!-- le css en local -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -119,7 +123,7 @@
                         <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
                             <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
                                 <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
-                                    <div id="headline" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Boostez la visibilité de votre marque</div>
+                                    <div id="headline" class="headline text-[3em] leading-20 font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Boostez la visibilité de votre marque</div>
     
                                     <div id="description" class="w-[80%] description opacity-0 animate__animated duration-500">
                                         Atteignez votre audience avec des campagnes publicitaires percutantes et adaptées à vos besoins.
@@ -142,7 +146,7 @@
                         <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
                             <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
                                 <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
-                                    <div id="headline_marketing_digital" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Développez votre audience durablelement</div>
+                                    <div id="headline_marketing_digital" class="headline text-[3em] leading-20 font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Développez votre audience durablelement</div>
     
                                     <div id="description_marketing_digital" class="w-[80%] description opacity-0 animate__animated duration-500">
                                         Exploitez des stratégies basées sur les données pour développer votre activité en ligne et toucher votre audience.
@@ -165,7 +169,7 @@
                         <div id="contenu_sur_le_carre_noir" class="absolute top-0 left-0 w-full md:w-[70%] h-full">
                             <div class="w-full h-full flex justify-center items-center px-10 pt-32 pb-10">
                                 <div class="w-[90%] h-[100%] flex flex-col justify-between overflow-hidden">
-                                    <div id="headline_Branding" class="headline text-[3em] font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Créez une identité mémorable</div>
+                                    <div id="headline_Branding" class="headline text-[3em] leading-20 font-bold w-full md:w-[60%] mix-blend-difference isolate opacity-0 animate__animated duration-500">Créez une identité mémorable</div>
     
                                     <div id="description_Branding" class="w-[80%] description opacity-0 animate__animated duration-500">
                                         Concevez une image de marque unique qui capte l’attention et inspire confiance auprès de vos clients.
@@ -198,14 +202,14 @@
         
         
         <!-- Nos services -->
-        <section id="Nos_services" class="px-3 sm:px-5 md:px-10 py-16 bg-[#212121] space-y-16 relative rounded-br-[15vw] before:content-[''] before:z-[2] before:bg-[#212121] before:absolute before:top-full before:left-0 before:w-[15vw] before:h-[15vw] after:z-[3] after:content-[''] after:bg-[#efefef] after:absolute after:top-full after:left-0 after:w-[15vw] after:h-[15vw] after:rounded-tl-[15vw]">
+        <section id="Nos_services" class="px-5 md:px-10 py-16 bg-[#212121] space-y-16 relative rounded-br-[15vw] before:content-[''] before:z-[2] before:bg-[#212121] before:absolute before:top-full before:left-0 before:w-[15vw] before:h-[15vw] after:z-[3] after:content-[''] after:bg-[#efefef] after:absolute after:top-full after:left-0 after:w-[15vw] after:h-[15vw] after:rounded-tl-[15vw]">
             <div class="w-full space-y-4">
-                <h1 class="w-full text-center font-bold text-4xl tracking-widest">Nos services</h1>
-                <p class="w-[90%] md:w-[50%] mx-auto text-center">Chez LeMime Agency, nous combinons créativité et stratégie pour propulser votre marque. Chaque service est pensé pour maximiser votre visibilité et engager votre audience. Faites confiance à notre expertise pour transformer vos idées en résultats concrets.</p>
+                <h1 class="w-full text-center font-bold text-4xl tracking-widest" data-aos="zoom-in" data-aos-duration="500">Nos services</h1>
+                <p class="w-[90%] md:w-[50%] mx-auto text-center" data-aos="fade-down" data-aos-delay="600">Chez LeMime Agency, nous combinons créativité et stratégie pour propulser votre marque. Chaque service est pensé pour maximiser votre visibilité et engager votre audience. Faites confiance à notre expertise pour transformer vos idées en résultats concrets.</p>
             </div>
 
             <div class="flex flex-col gap-6 lg:flex-row lg:gap-10 lg:justify-around justify-center items-center">
-                <div class="parent">
+                <div class="parent" data-aos="fade-right" data-aos-delay="700">
                     <div class="card">
                         <div class="logo">
                             <!-- <span class="circle circle1"></span> -->
@@ -249,7 +253,7 @@
                 </div>
 
                 
-                <div class="parent">
+                <div class="parent" data-aos="fade-left">
                     <div class="card">
                         <div class="logo">
                             <!-- <span class="circle circle1"></span> -->
@@ -293,7 +297,7 @@
                 </div>
 
 
-                <div class="parent">
+                <div class="parent" data-aos="fade-up">
                     <div class="card">
                         <div class="logo">
                             <!-- <span class="circle circle1"></span> -->
@@ -344,16 +348,16 @@
         
         
         <!-- Nos réalisations -->
-         <section id="Nos_realisations" class="px-3 sm:px-5 md:px-10 py-16 relative z-[4] text-black space-y-16 overflow-hidden">
+         <section id="Nos_realisations" class="px-5 md:px-10 py-16 relative z-[4] text-black space-y-16 overflow-hidden">
             <div class="w-full space-y-4">
-                <h1 class="w-full text-center font-bold text-4xl tracking-widest text-[#29639c]">Nos réalisations</h1>
-                <p class="w-[90%] md:w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
+                <h1 class="w-full text-center font-bold text-4xl tracking-widest text-[#29639c]" data-aos="fade-up">Nos réalisations</h1>
+                <p class="w-[90%] md:w-[50%] mx-auto text-center" data-aos="fade-up" data-aos-delay="500">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
             </div>
 
             <div id="contener_realisations" class="space-y-6 lg:space-y-32 md:px-10">
                 <!-- la projet pub -->
                 <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row">
-                    <div id="contenu_realisations" class="relative w-full lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+                    <div id="contenu_realisations" class="relative w-full lg:w-[36rem] rounded-2xl bg-white" data-aos="fade-right" data-aos-delay="700" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
 
                         <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
                             <div class="w-10 h-10 rounded-full overflow-hidden">
@@ -423,7 +427,7 @@
 
                     </div>
 
-                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden" data-aos="fade-left" date-aos-delay="900">
                         <!-- la structure de swiper -->
                          <!-- le conteneur pricipal -->
                          <div class="swiper swiper_pub w-full h-full">
@@ -474,7 +478,7 @@
 
                 <!-- Branding et identité visuelle -->
                 <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row-reverse">
-                    <div id="contenu_realisations" class="relative w-full lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+                    <div id="contenu_realisations" class="relative w-full lg:w-[36rem] rounded-2xl bg-white" data-aos="fade-left" data-aos-delay="500" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
 
                         <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
                             <div class="w-10 h-10 rounded-full overflow-hidden">
@@ -556,7 +560,7 @@
 
                     </div>
 
-                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden" data-aos="fade-right" data-aos-delay="800">
                         <!-- la structure de swiper -->
                          <!-- le conteneur pricipal -->
                          <div class="swiper swiper_branding w-full h-full">
@@ -621,7 +625,7 @@
 
                 <!-- le Marketing digital -->
                 <div class="flex flex-col justify-center items-center lg:gap-32 lg:flex-row">
-                    <div id="contenu_realisations" class="relative w-full lg:w-[28rem] rounded-2xl bg-white" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
+                    <div id="contenu_realisations" class="relative w-full lg:w-[36rem] rounded-2xl bg-white" data-aos="zoom-in" data-aos-delay="600" style="box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;">
 
                         <div id="project_logo_title" class="flex items-center justify-center gap-4 p-4 z-50">
                             <div class="w-10 h-10 rounded-full overflow-hidden">
@@ -703,7 +707,7 @@
 
                     </div>
 
-                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden">
+                    <div id="participants" class="w-full h-full hidden lg:flex lg:w-[30%] overflow-hidden" data-aos="zoom-in-up" data-aos-delay="800">
                         <!-- la structure de swiper -->
                          <!-- le conteneur pricipal -->
                          <div class="swiper swiper_marketing w-full h-full">
@@ -766,17 +770,17 @@
                 </div>
                 <!-- le Marketing digital -->
             </div>
-         </section>
+        </section>
         <!-- Nos réalisations -->
 
 
 
 
         <!-- La section des chiffres -->
-        <section id="section_nos_valeur" class="px-3 sm:px-5 md:px-10 space-y-16 bg-black relative rounded-tr-[15vw] before:content-[''] before:absolute before:bottom-full before:left-0 before:w-[15vw] before:h-[15vw] before:bg-black before:z-[2] after:content-[''] after:absolute after:bottom-full after:left-0 after:w-[15vw] after:h-[15vw] after:bg-[#efefef] after:z-[3] after:rounded-bl-[15vw]">
+        <section id="section_nos_valeur" class="px-5 md:px-10 space-y-16 bg-black relative rounded-tr-[15vw] before:content-[''] before:absolute before:bottom-full before:left-0 before:w-[15vw] before:h-[15vw] before:bg-black before:z-[2] after:content-[''] after:absolute after:bottom-full after:left-0 after:w-[15vw] after:h-[15vw] after:bg-[#efefef] after:z-[3] after:rounded-bl-[15vw]">
             <div class="w-full text-center p-16 space-y-4">
-                <h1 class="font-bold text-4xl tracking-widest">Nos Valeurs</h1>
-                <p class="w-[90%] md:w-[50%] mx-auto text-center">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
+                <h1 class="font-bold text-4xl tracking-widest" data-aos="fade-down">Nos Valeurs</h1>
+                <p class="w-[90%] md:w-[50%] mx-auto text-center" data-aos="fade-up" data-aos-delay="500">Derrière chaque projet, il y a une équipe, une vision et une passion commune : créer l’extraordinaire pour nos clients. Chaque projet est une histoire. Découvrez comment nous transformons les idées de nos clients en succès concrets.</p>
             </div>
         </section>
         <!-- La section des chiffres -->
@@ -788,9 +792,27 @@
 
 
 
+    <!-- la bibliotheque JQUERY -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- la bibliotheque JQUERY -->
+
+    <!-- la bibliotheque swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- la bibliotheque swiper -->
+
+    <!-- le fichier qui initier les animation swiper -->
     <script src="assets/js/swiper_slide.js"></script>
+    <!-- le fichier qui initier les animation swiper -->
+
+    <!-- la bibliotheque AOS pour les animation au scroll -->
+     <script src="node_modules/aos/dist/aos.js"></script>
+        <!-- Ce fichier va initier AOS -->
+         <script src="assets/js/Aos_initiate.js"></script>
+        <!-- Ce fichier va initier AOS -->
+    <!-- la bibliotheque AOS pour les animation au scroll -->
+
+    <!-- le poitn d'entré de toutes mes fonctions -->
     <script src="assets/js/main.js" type="module"></script>
+    <!-- le poitn d'entré de toutes mes fonctions -->
 </body>
 </html>
