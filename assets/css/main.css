@@ -96,13 +96,19 @@ body{
 
 /* LA SECTION NOS SERVICES */
 .parent {
-    width: 300px;
+    width: 350px;
     height: 100%;
     perspective: 1000px;
   }
+
+  .parent.nos_valeurs{
+    width: 350px;
+    height: 28rem;
+  }
   
   .card {
-    height: 100%;
+    height: 26rem;
+    width: 100%;
     border-radius: 50px;
     padding-bottom: 80px;
     background: linear-gradient(135deg, var(--couleur-de-fond-btn-hover) 0%, var(--couleur-de-fond-btn) 100%);
@@ -110,6 +116,7 @@ body{
     transform-style: preserve-3d;
     box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
   }
+  
   
   .glass {
     transform-style: preserve-3d;
@@ -380,3 +387,16 @@ body{
       opacity: 0;
     }
   }
+/* SECTION NOS REALISATIONS */
+
+
+
+
+/* La section NOS TEMOIGNAGES */
+.swiper_temoignage{
+  height: 30vh;
+}
+.swiper_temoignage .swiper-wrapper .swiper-slide{
+  height: 80% !important;
+}
+/* La section NOS TEMOIGNAGES */

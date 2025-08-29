@@ -311,3 +311,19 @@ const swiper_marketing_mobile = new Swiper (".swiper_marketing_mobile", {
     speed: 1200,
     autoplay:{delay:5000}
 });
+
+const swiper_temoignage = new Swiper (".swiper_temoignage", {
+    freeMode: true,
+    spaceBetween: 40,
+    breakpoints: {
+        768: { slidesPerView: 2 }, // lg
+        1024: { slidesPerView: 3 } // lg
+    },
+    autoplay:{delay:5000},
+    speed: 2000,
+    // Configuration de la scrollbar (optionnel)
+    pagination: {
+        el: '.swiper_temoignage .swiper-pagination',
+        clickable: true,
+    },
+})
