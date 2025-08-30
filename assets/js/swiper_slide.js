@@ -327,3 +327,22 @@ const swiper_temoignage = new Swiper (".swiper_temoignage", {
         clickable: true,
     },
 })
+
+
+// Le swiper de la section nos partenaires
+const swiper_partenaire = new Swiper (".swiper_partenaire", {
+    breakpoints:{
+        0:{
+            slidesPerView: 3,
+
+            // la configuration de la pagination
+            pagination: {
+                el: ".swiper_partenaire .swiper-pagination",
+                clickable: true
+            }
+        },
+        768: {
+            slidesPerView: 6,
+        }
+    }
+});

@@ -394,9 +394,30 @@ body{
 
 /* La section NOS TEMOIGNAGES */
 .swiper_temoignage{
-  height: 30vh;
+  height: 14rem !important;
 }
+
+@media (min-width: 768px) {
+  .swiper_temoignage{
+    height: 20rem !important;
+  }
+}
+
 .swiper_temoignage .swiper-wrapper .swiper-slide{
   height: 80% !important;
 }
 /* La section NOS TEMOIGNAGES */
+
+/* La section nos partenaires */
+@media (max-width: 767px){
+  .swiper_partenaire {
+    height: 10rem !important;
+  }
+}
+
+.swiper_partenaire .swiper-wrapper .swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/* La section nos partenaires */
